@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e9f6fb;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+/* LEFT FORM */
+.form-box {
+  width: 50%;
+  padding: 30px;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+}
+
+.form-box a {
+  float: right;
+  font-size: 14px;
+  color: #888;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.input-box {
+  display: flex;
+  border: 2px solid #cbe3ea;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.prefix, .suffix {
+  background: #e6f2f7;
+  padding: 10px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* RADIO */
+.radio-box label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #cbe3ea;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  background: #c9d816;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* RIGHT RESULTS */
+.result-box {
+  width: 50%;
+  background: #0a2a3a;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.big-result {
+  font-size: 36px;
+  color: #c9d816;
+}
+
+.small-result {
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ERROR STYLE */
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .form-box,
+  .result-box {
+    width: 100%;
+  }
+}
